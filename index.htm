@@ -9,32 +9,38 @@
 </head>
 <body>
     <header>
-        <img src="./assets/icons/logoE2Clib.png" alt="Logo du site">
-        <h1>E2C Lib - Accueil</h1>
+        <div class="header-title">
+            <img src="./assets/icons/logoE2Clib.png" alt="Logo du site">
+            <h1>E2C Lib - Accueil</h1>
+        </div>
         <nav>
-            <a href="#">Catalogue</a>
-            <a href="#">Détente</a>
-            <a href="#">Connexion</a>
+            <a class="btn btn-dark" href="#">Catalogue</a>
+            <a class="btn btn-dark" href="#">Détente</a>
+            <a class="btn btn-light" href="#">Connexion</a>
         </nav>
     </header>
 
     <main>
         <article>
-            <h2>L'e2C, c'est quoi</h2>
-             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit nostrum perferendis expedita obcaecati beatae est iusto assumenda architecto atque distinctio voluptas magnam asperiores autem quas modi non eligendi, quibusdam possimus quae temporibus totam. Et quasi quo obcaecati doloremque voluptatem mollitia iusto maxime nulla qui, architecto sapiente laborum aliquid officia veritatis iste soluta culpa omnis, nobis perferendis cupiditate quisquam reiciendis ipsam.</p>
-             <p>Cupiditate, repellendus! Laudantium quibusdam vero saepe maiores. Ratione laboriosam, officiis aliquam, rem ex unde doloribus architecto corrupti facilis quidem voluptatum hic distinctio ut est repudiandae beatae cupiditate, praesentium magni! Sapiente sed culpa quisquam suscipit dolor porro optio nihil, beatae ullam quibusdam rerum alias, cupiditate laudantium. Dolores assumenda veniam ex temporibus dolorem repellat adipisci voluptatum exercitationem corrupti unde facere, porro minus.</p>
-             <iframe width="560" height="315" src="https://www.youtube.com/embed/q8IXhr6b304?si=gP3tRh2O0AWfAN0W" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="art-text">
+                <h2>L'e2C, c'est quoi</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit nostrum perferendis expedita obcaecati beatae est iusto assumenda architecto atque distinctio voluptas magnam asperiores autem quas modi non eligendi, quibusdam possimus quae temporibus totam. Et quasi quo obcaecati doloremque voluptatem mollitia iusto maxime nulla qui, architecto sapiente laborum aliquid officia veritatis iste soluta culpa omnis, nobis perferendis cupiditate quisquam reiciendis ipsam.</p>
+                <p>Cupiditate, repellendus! Laudantium quibusdam vero saepe maiores. Ratione laboriosam, officiis aliquam, rem ex unde doloribus architecto corrupti facilis quidem voluptatum hic distinctio ut est repudiandae beatae cupiditate, praesentium magni! Sapiente sed culpa quisquam suscipit dolor porro optio nihil, beatae ullam quibusdam rerum alias, cupiditate laudantium. Dolores assumenda veniam ex temporibus dolorem repellat adipisci voluptatum exercitationem corrupti unde facere, porro minus.</p>
+             </div>
+             <iframe class="art-illus" src="https://www.youtube.com/embed/q8IXhr6b304?si=gP3tRh2O0AWfAN0W" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             
         </article>
 
         <div class="inter-article" id="inter1"></div>
 
         <article>
-            <img src="./assets/pictures/article-pic1.png" alt="Le groupe prép num">
-            <h2>La Prépa Num à l'E2C</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis fugit corrupti qui, ipsam temporibus numquam animi sed? Molestiae ea quasi ullam, deleniti, minus, non optio odio alias voluptatibus animi assumenda itaque asperiores voluptatum quibusdam fugit.</p>
-            <p>Tempore nesciunt, ullam, exercitationem repudiandae vel earum nisi et voluptatem ex officiis sapiente dignissimos! Sequi vero in unde dolorem exercitationem tenetur aperiam voluptatibus cupiditate ullam quam corporis officia quas, perspiciatis delectus ducimus blanditiis hic similique?</p>
-            <p>Laboriosam perspiciatis ab libero velit pariatur suscipit earum accusamus in esse ullam voluptates tempora eveniet, consectetur cum ipsa vel aliquam saepe quos voluptatem alias? Obcaecati placeat rerum rem? Facilis ex perspiciatis corporis tempore accusamus aliquam!</p>
+            <img class="art-illus" src="./assets/pictures/article-pic1.png" alt="Le groupe prép num">
+            <div class="art-text">
+                <h2>La Prépa Num à l'E2C</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis fugit corrupti qui, ipsam temporibus numquam animi sed? Molestiae ea quasi ullam, deleniti, minus, non optio odio alias voluptatibus animi assumenda itaque asperiores voluptatum quibusdam fugit.</p>
+                <p>Tempore nesciunt, ullam, exercitationem repudiandae vel earum nisi et voluptatem ex officiis sapiente dignissimos! Sequi vero in unde dolorem exercitationem tenetur aperiam voluptatibus cupiditate ullam quam corporis officia quas, perspiciatis delectus ducimus blanditiis hic similique?</p>
+                <p>Laboriosam perspiciatis ab libero velit pariatur suscipit earum accusamus in esse ullam voluptates tempora eveniet, consectetur cum ipsa vel aliquam saepe quos voluptatem alias? Obcaecati placeat rerum rem? Facilis ex perspiciatis corporis tempore accusamus aliquam!</p>
+            </div>
         </article>
 
         <div class="inter-article" id="inter2"></div>
@@ -50,8 +56,10 @@
     </main>
 
     <footer>
-        <p>Site créé par la Prépa numerique de l'E2C - Grand Lille, Site d'Armentière</p>
-        <a href="#">Nous Contacter</a>
+        <div class="foot-right">
+            <p>Site créé par la Prépa numerique de l'E2C - Grand Lille, Site d'Armentière</p>
+            <a class="btn btn-light" href="#">Nous Contacter</a>
+        </div>
     </footer>
 </body>
 </html>
