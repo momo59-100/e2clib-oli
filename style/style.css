@@ -1,10 +1,10 @@
 @font-face {
-    font-family:"custom" ;
+    font-family: "custom";
     src: url("./CaviarDreams.ttf");
 }
 
 @font-face {
-    font-family:"script" ;
+    font-family: "script";
     src: url("./High_Spirited.ttf");
 }
 
@@ -14,28 +14,29 @@
     box-sizing: border-box;
 
     /*mes couleurs*/
-    --col-dark-main : #0b1622;
-    --col-dark-alt : #0d2a38;
+    --col-dark-main: #0b1622;
+    --col-dark-alt: #0d2a38;
     --col-light: #c2eef4;
-    --col-shadow : #c2eef4b7;
-    
+    --col-shadow: #c2eef4b7;
+
 }
 
 html {
-    font-size:16px;
+    font-size: 16px;
 }
 
 body {
     font-family: "custom", sans-serif;
-    background-color:var(--col-dark-main);
-    color : var(--col-light);
+    background-color: var(--col-dark-main);
+    color: var(--col-light);
 }
+
 /* header*/
 
 header {
 
     position: fixed;
-    width : 100vw;
+    width: 100vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -69,11 +70,12 @@ h2 {
 
 .header-title>img {
     display: block;
-    width : 12%;
+    width: 12%;
     border-radius: 15%;
 }
+
 nav {
-    width : 60%;
+    width: 60%;
     display: flex;
     flex-direction: row;
     justify-content: end;
@@ -82,23 +84,23 @@ nav {
 
 /*boutons*/
 
-.btn { 
+.btn {
     display: block;
     font-size: 1.2rem;
     font-weight: 700;
-    padding : 8px 25px;
+    padding: 8px 25px;
     border-radius: 10px;
     width: fit-content;
     text-align: center;
     text-decoration: none;
-    margin : 0 15px;
+    margin: 0 15px;
 
 }
 
 
 .btn-dark {
     background-color: var(--col-dark-alt);
-    color:var(--col-light);
+    color: var(--col-light);
 }
 
 .btn-dark:hover {
@@ -107,32 +109,31 @@ nav {
 
 .btn-light {
     background-color: var(--col-light);
-    color : var(--col-dark-main);
+    color: var(--col-dark-main);
     margin: 0 35px;
 }
 
 .btn-light:hover {
     background-color: var(--col-dark-alt);
-    color : var(--col-light);
+    color: var(--col-light);
     border: var(--col-light) solid 2px;
-    padding : 4px 21px;
+    padding: 4px 21px;
 }
 
 /*partie main */
 
 main {
-    position : relative;
-    top : 5vh;
+    position: relative;
+    top: 15vh;
     display: flex;
     flex-direction: column;
     justify-content: start;
-    align-items : center;
-    
-    
+    align-items: center;
+    min-height: 78vh;
 }
 
 main>* {
-    margin : 15vh 0;
+    margin: 15vh 0;
 }
 
 #inter1 {
@@ -144,7 +145,7 @@ main>* {
 }
 
 .inter-article {
-    width : 100vw;
+    width: 100vw;
     aspect-ratio: 3/1;
 
     background-repeat: no-repeat;
@@ -163,9 +164,9 @@ article {
     justify-content: space-between;
     align-items: center;
     font-size: 1.1rem;
-    width : 70%;
+    width: 70%;
     padding: 50px;
-   
+
 
     background-color: var(--col-dark-alt);
     border-radius: 10px;
@@ -175,12 +176,12 @@ article {
 }
 
 .art-text {
-    width : 60%;
+    width: 60%;
 }
 
 .art-illus {
-    display :block;
-    width : 35%;
+    display: block;
+    width: 35%;
     border-radius: 15px;
 }
 
@@ -189,15 +190,15 @@ iframe {
 }
 
 footer {
-    position : relative;
-   
-    top : 10vh;
+    position: relative;
+
+    top: 10vh;
     background-color: var(--col-dark-alt);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: stretch;
-    border-top: var(--col-light) solid 1px ;
+    border-top: var(--col-light) solid 1px;
 }
 
 .foot-left {
@@ -225,13 +226,18 @@ footer {
 
 .site {
     display: flex;
-    
+
     flex-direction: column;
     justify-content: start;
     align-items: start;
-    
+
 }
 
-.site>p, h3 {
-     margin-bottom: 5px;
+.site>p,
+h3 {
+    margin-bottom: 5px;
+}
+
+.js-zone{
+    margin: 5px
 }
