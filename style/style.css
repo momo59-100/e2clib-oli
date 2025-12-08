@@ -12,8 +12,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
-    /*mes couleurs*/
     --col-dark-main: #0b1622;
     --col-dark-alt: #0d2a38;
     --col-light: #c2eef4;
@@ -30,12 +28,11 @@ body {
     color: var(--col-light);
 }
 
-/* header*/
+/* header */
 header {
     position: fixed;
     width: 100vw;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     background-color: var(--col-dark-alt);
@@ -50,44 +47,33 @@ h1 {
     margin: 0 25px;
 }
 
-h2 {
-    font-size: 2rem;
-    margin-bottom: 15px;
-}
-
 .header-title {
-    width: 35%;
     display: flex;
-    flex-direction: row;
-    justify-content: start;
     align-items: center;
 }
 
-.header-title > img {
-    display: block;
+.header-title>img {
     width: 12%;
     border-radius: 15%;
 }
 
 nav {
-    width: 60%;
     display: flex;
-    flex-direction: row;
     justify-content: end;
     align-items: center;
 }
 
-/*boutons*/
+/* boutons */
 .btn {
     display: block;
     font-size: 1.2rem;
     font-weight: 700;
     padding: 8px 25px;
     border-radius: 10px;
-    width: fit-content;
     text-align: center;
     text-decoration: none;
     margin: 0 15px;
+    cursor: pointer;
 }
 
 .btn-dark {
@@ -102,7 +88,6 @@ nav {
 .btn-light {
     background-color: var(--col-light);
     color: var(--col-dark-main);
-    margin: 0 35px;
 }
 
 .btn-light:hover {
@@ -112,179 +97,13 @@ nav {
     padding: 4px 21px;
 }
 
-/*partie main */
+/* main */
 main {
     position: relative;
     top: 15vh;
     display: flex;
     flex-direction: column;
-    justify-content: start;
     align-items: center;
-    min-height: 78vh;
-}
-
-main > * {
-    margin: 15vh 0;
-}
-
-#inter1 {
-    background-image: url("../assets/pictures/inter1.png");
-}
-
-#inter2 {
-    background-image: url("../assets/pictures/inter2.png");
-}
-
-.inter-article {
-    width: 100vw;
-    aspect-ratio: 3/1;
-    background-repeat: no-repeat;
-    background-size: 100vw;
-    background-position-y: center;
-    background-attachment: fixed;
-}
-
-/* réglage des article*/
-article {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 1.1rem;
-    width: 70%;
-    padding: 50px;
-    background-color: var(--col-dark-alt);
-    border-radius: 10px;
-    box-shadow: var(--col-shadow) 2px 2px 4px 0;
-}
-
-.art-text {
-    width: 60%;
-}
-
-.art-illus {
-    display: block;
-    width: 35%;
-    border-radius: 15px;
-}
-
-iframe {
-    aspect-ratio: 560/315;
-}
-
-footer {
-    position: relative;
-    top: 10vh;
-    background-color: var(--col-dark-alt);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: stretch;
-    border-top: var(--col-light) solid 1px;
-}
-
-.foot-left {
-    display: flex;
-    padding: 20px;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 20%;
-    border-right: var(--col-light) solid 1px;
-}
-
-.foot-left > p {
-    margin: 15px 0;
-}
-
-.foot-right {
-    display: flex;
-    padding: 20px;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 80%;
-}
-
-.site {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: start;
-}
-
-.site > p,
-h3 {
-    margin-bottom: 5px;
-}
-
-.js-zone {
-    margin: 5px;
-}
-
-#connect-background {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    position: fixed;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
-
-    opacity: 0;
-
-    background-color: #ffffff32;
-    backdrop-filter: blur(4px);
-    z-index: 20;
-
-    transition: opacity 500ms;
-}
-
-#connect-form {
-    background-color: var(--col-dark-main);
-    color: var(--col-light);
-    padding: 20px;
-    border-radius: 20px;
-    box-shadow: var(--col-shadow) 2px 2px 4px 0;
-    width: 60%;
-}
-
-#connect-form > form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-}
-
-#connect-form > form > * {
-    display: block;
-    margin: 5px 0;
-}
-
-#connect-form > form > label {
-    font-size: 1.5rem;
-}
-
-#connect-form > form > input {
-    font-size: 1.5rem;
-    width: 100%;
-    border-radius: 5px;
-    background-color: var(--col-light);
-    color: var(--col-dark-main);
-    padding: 5px;
-}
-
-#connect-form > form > input:focus {
-    background-color: var(--col-dark-main);
-    color: var(--col-light);
-    box-shadow: var(--col-shadow) 1px 1px 2px 0;
-}
-
-#connect-form > form > .btn {
-    width: 40%;
-    margin: auto;
-    margin-top: 30px;
 }
 
 .board {
@@ -292,9 +111,8 @@ h3 {
     height: 300px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
     grid-gap: 0.5rem;
-    margin: 0;
+    margin-bottom: 20px;
 }
 
 .cell {
@@ -303,11 +121,79 @@ h3 {
     font-size: 3rem;
     display: flex;
     justify-content: center;
+    align-items: center;
     cursor: pointer;
 }
 
+.cell.win {
+    background-color: #4caf50;
+    color: white;
+    transition: 0.3s;
+}
+
 .annonce {
+    font-size: 2rem;
+    margin: 15px 0;
     text-align: center;
-    font-size: 5rem;
-    color: blue;
+    color: #00f;
+}
+
+/* footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--col-dark-alt);
+    padding: 20px;
+    border-top: var(--col-light) solid 1px;
+}
+
+.foot-left,
+.foot-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.site>p,
+h3 {
+    margin-bottom: 5px;
+}
+
+/* popup connexion */
+#connect-background {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0; left:0;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    background-color: #ffffff32;
+    backdrop-filter: blur(4px);
+    z-index: 20;
+    transition: opacity 0.5s;
+}
+
+#connect-form {
+    background-color: var(--col-dark-main);
+    color: var(--col-light);
+    padding: 20px;
+    border-radius: 20px;
+    width: 60%;
+}
+
+#connect-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+#connect-form form label,
+#connect-form form input {
+    margin: 5px 0;
+    font-size: 1.2rem;
+}
+
+#connect-form form input[type="submit"] {
+    width: 40%;
+    margin-top: 20px;
 }
