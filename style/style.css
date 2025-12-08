@@ -13,8 +13,6 @@
     padding: 0;
     box-sizing: border-box;
 
-
-
     /*mes couleurs*/
     --col-dark-main: #0b1622;
     --col-dark-alt: #0d2a38;
@@ -65,7 +63,7 @@ h2 {
     align-items: center;
 }
 
-.header-title>img {
+.header-title > img {
     display: block;
     width: 12%;
     border-radius: 15%;
@@ -125,7 +123,7 @@ main {
     min-height: 78vh;
 }
 
-main>* {
+main > * {
     margin: 15vh 0;
 }
 
@@ -195,7 +193,7 @@ footer {
     border-right: var(--col-light) solid 1px;
 }
 
-.foot-left>p {
+.foot-left > p {
     margin: 15px 0;
 }
 
@@ -215,16 +213,14 @@ footer {
     align-items: start;
 }
 
-.site>p,
+.site > p,
 h3 {
     margin-bottom: 5px;
 }
 
 .js-zone {
-    margin: 5px
+    margin: 5px;
 }
-
-
 
 #connect-background {
     display: flex;
@@ -254,23 +250,23 @@ h3 {
     width: 60%;
 }
 
-#connect-form>form {
+#connect-form > form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: start;
 }
 
-#connect-form>form>* {
+#connect-form > form > * {
     display: block;
     margin: 5px 0;
 }
 
-#connect-form>form>label {
+#connect-form > form > label {
     font-size: 1.5rem;
 }
 
-#connect-form>form>input {
+#connect-form > form > input {
     font-size: 1.5rem;
     width: 100%;
     border-radius: 5px;
@@ -279,38 +275,39 @@ h3 {
     padding: 5px;
 }
 
-#connect-form>form>input:focus {
+#connect-form > form > input:focus {
     background-color: var(--col-dark-main);
     color: var(--col-light);
     box-shadow: var(--col-shadow) 1px 1px 2px 0;
 }
 
-#connect-form>form>.btn {
+#connect-form > form > .btn {
     width: 40%;
     margin: auto;
     margin-top: 30px;
 }
 
-.board{
-width: 300px;
-height: 300px;
-display: grid; 
-grid-template-columns: repeat(3, 1fr);
-grid-template-rows: repeat(3, 1fr);
-grid-gap: 0.5rem;
-margin: 0;
+.board {
+    width: 300px;
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 0.5rem;
+    margin: 0;
 }
 
-.cell{
-background-color: white;    
-color: red;
-font-size: 3rem;
-display: flex;
-justify-content: center;
-cursor:pointer;
+.cell {
+    background-color: white;
+    color: red;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
 }
-.annonce{
-  text-align: center;
-  font-size: 5rem;  
-  color: blue;
+
+.annonce {
+    text-align: center;
+    font-size: 5rem;
+    color: blue;
 }
