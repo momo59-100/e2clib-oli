@@ -12,7 +12,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
     /* couleurs */
     --col-dark-main: #0b1622;
     --col-dark-alt: #0d2a38;
@@ -119,8 +118,72 @@ main {
     min-height: 78vh;
 }
 
-main > * {
-    margin: 15vh 0;
+/* Articles en cards */
+.article-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--col-dark-alt);
+    border: 2px solid var(--col-light);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: var(--col-shadow) 2px 2px 8px 0;
+    width: 80%;
+}
+
+.art-image,
+.art-illus,
+iframe.art-illus {
+    width: 35%;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.art-text {
+    width: 60%;
+    margin-left: 20px;
+}
+
+.art-text h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.art-text p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+/* Inter-articles */
+.inter-article {
+    width: 100%;
+    height: 300px;
+    margin: 50px 0;
+    border-radius: 20px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+#inter1 {
+    background-image: url('./assets/pictures/fond1.jpg');
+}
+
+#inter2 {
+    background-image: url('./assets/pictures/fond2.jpg');
+}
+
+/* overlay */
+#inter1::before,
+#inter2::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0b162280; /* semi-transparent */
+    border-radius: 20px;
 }
 
 /* morpion */
@@ -152,8 +215,9 @@ main > * {
 
 .annonce {
     text-align: center;
-    font-size: 5rem;
+    font-size: 3rem;
     color: blue;
+    margin-bottom: 10px;
 }
 
 /* footer */
@@ -218,6 +282,11 @@ h3 {
     transition: opacity 0.5s;
 }
 
+#connect-background.active {
+    display: flex;
+    opacity: 1;
+}
+
 #connect-form {
     background-color: var(--col-dark-main);
     color: var(--col-light);
@@ -262,4 +331,24 @@ h3 {
     width: 40%;
     margin: auto;
     margin-top: 30px;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 768px) {
+    .article-card {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .art-image,
+    .art-illus,
+    .art-text,
+    iframe.art-illus {
+        width: 100%;
+        margin: 0;
+    }
+
+    .art-text {
+        margin-top: 10px;
+    }
 }
