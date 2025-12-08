@@ -5,12 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game</title>
+
     <link rel="stylesheet" href="../style/style.css">
     <script src="../Javascript/app.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
+        <input type="checkbox">
         <div class="header-title">
             <img src="./assets/icons/logoE2Clib.png" alt="Logo du site">
             <h1>E2C Lib - Accueil</h1>
@@ -21,41 +27,73 @@
             <a class="btn btn-light" id="connect-button" href="#">Connexion</a>
         </nav>
     </header>
+
     <main>
-        
+        <div class="board" id="board">
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+        </div>
+
+        <div class="annonce"></div>
     </main>
+
+    <footer>
+        <div class="foot-left">
+            <p>Site créé par la Prépa numérique de l'E2C - Grand Lille, Site d'Armentières</p>
+            <a class="btn btn-light" href="#">Nous Contacter</a>
+        </div>
+        <div class="foot-right">
+            <div class="site">
+                <h3>Site d'Armentières</h3>
+                <p>8 rue Philippe de Girard</p>
+                <p>59 280 Armentières</p>
+                <p>03 28 52 90 50</p>
+            </div>
+            <div class="site">
+                <h3>Site de Lille</h3>
+                <p>48 rue des canonniers</p>
+                <p>59 000 Lille</p>
+                <p>03 20 63 30 80</p>
+            </div>
+            <div class="site">
+                <h3>Site de Roubaix</h3>
+                <p>45 boulevard du général Leclerc</p>
+                <p>59 100 Roubaix</p>
+                <p>03 28 07 59 80</p>
+            </div>
+            <div class="site">
+                <h3>Site de Saint-Omer</h3>
+                <p>17 rue Allent</p>
+                <p>62 500 Saint-Omer</p>
+                <p>03 28 52 90 60</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- POPUP -->
+    <div id="connect-background">
+        <div id="connect-form">
+            <div class="close-button">X</div>
+
+            <form action="#" method="post">
+                <label for="email">Votre email :</label>
+                <input type="email" name="email" id="email" placeholder="name@tonsite.esp" required>
+
+                <label for="password">Mot de passe :</label>
+                <input type="password" name="password" id="password" placeholder="********" required>
+
+                <input type="submit" value="Let's Read!" class="btn btn-light">
+            </form>
+        </div>
+    </div>
+
 </body>
-<footer>
-    <div class="foot-left">
-        <p>Site créé par la Prépa numerique de l'E2C - Grand Lille, Site d'Armentière</p>
-        <a class="btn btn-light" href="#">Nous Contacter</a>
-    </div>
-    <div class="foot-right">
-        <div class="site">
-            <h3>Site d'Armentières</h3>
-            <p>8 rue Philippe de Girard</p>
-            <p>59 280 Armentières</p>
-            <p>03 28 52 90 50</p>
-        </div>
-        <div class="site">
-            <h3>Site de Lille</h3>
-            <p>48 rue des canonniers</p>
-            <p>59 000 Lille</p>
-            <p>03 20 63 30 80</p>
-        </div>
-        <div class="site">
-            <h3>Site de Roubaix</h3>
-            <p>45 boulevard du général Leclerc</p>
-            <p>59 100 Roubaix</p>
-            <p>03 28 07 59 80</p>
-        </div>
-        <div class="site">
-            <h3>Site de Saint-Omer</h3>
-            <p>17 rue Allent</p>
-            <p>62 500 Saint-Omer</p>
-            <p>03 28 52 90 60</p>
-        </div>
-    </div>
-</footer>
 
 </html>
