@@ -53,27 +53,3 @@ restart.addEventListener('click', () => {
     turn = "X";
     isGameOver = false;
 });
-
-// ----------- POPUP CONNEXION -----------
-const connectButton = document.querySelector("#connect-button");
-const connectBox = document.querySelector("#connect-background");
-const closeButton = document.querySelector(".close-button");
-
-connectButton.addEventListener("click", (e) => {
-    e.preventDefault();
-    connectBox.style.display = "flex";
-    setTimeout(() => { connectBox.style.opacity = "1"; }, 10);
-});
-
-closeButton.addEventListener("click", () => {
-    connectBox.style.opacity = "0";
-    setTimeout(() => { connectBox.style.display = "none"; }, 500);
-});
-
-const formBox = document.querySelector("#connect-form");
-formBox.addEventListener("click", e => e.stopPropagation());
-
-connectBox.addEventListener("click", () => {
-    connectBox.style.opacity = "0";
-    setTimeout(() => { connectBox.style.display = "none"; }, 500);
-});

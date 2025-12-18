@@ -7,7 +7,7 @@
     <title>E2C Lib</title>
     <link rel="icon" href="./assets/icons/logoE2Clib.png">
     <link rel="stylesheet" href="./style/style.css">
-    <script src="./Javascript/app.js" defer></script>
+    <script src="./Javascript/connexion.js" defer></script>
 </head>
 
 <body>
@@ -106,20 +106,22 @@
     </footer>
 
     <!-- POPUP Connexion -->
-    <div id="connect-background">
-        <div id="connect-form">
-            <div class="close-button">X</div>
-            <form action="#" method="post">
-                <label for="email">Votre email :</label>
-                <input type="email" name="email" id="email" placeholder="name@tonsite.esp" required>
+ <!-- POPUP Connexion -->
+<div id="connect-background" style="display:none; opacity:0;">
+    <div id="connect-form">
+        <div class="close-button">X</div>
+        <form action="#" method="post">
+            <label for="email">Votre email :</label>
+            <input type="email" name="email" id="email" placeholder="name@tonsite.esp" required>
 
-                <label for="password">Mot de passe :</label>
-                <input type="password" name="password" id="password" placeholder="********" required>
+            <label for="password">Mot de passe :</label>
+            <input type="password" name="password" id="password" placeholder="********" required>
 
-                <input type="submit" value="Let's Read!" class="btn btn-light">
-            </form>
-        </div>
+            <input type="submit" value="Let's Read!" class="btn btn-light">
+        </form>
     </div>
+</div>
+
 </body>
 
 </html>

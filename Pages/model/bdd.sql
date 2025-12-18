@@ -174,3 +174,38 @@ INSERT INTO books (title, auteur, year, pages, genre_id, format_id) VALUES
 ('Et tu trouveras le trésor qui dort en toi', 'Laurent Gounelle', 2016, 819, (SELECT id FROM genres WHERE name="Politique"), (SELECT id FROM format WHERE name="Roman")),
 ('La Vie est facile, ne t''inquiète pas', 'Agnès Martin-Lugand', 2015, 942, (SELECT id FROM genres WHERE name="Drame"), (SELECT id FROM format WHERE name="Grand Format")),
 ('Les gens heureux lisent et boivent du café', 'Agnès Martin-Lugand', 2013, 426, (SELECT id FROM genres WHERE name="Bande-déssinée"), (SELECT id FROM format WHERE name="Grand Format"));
+
+alter table books
+ADD column user_id smallint UNSIGNED;
+alter TABLE books
+ADD constraint fk_users foreign key (user_id) references (user_id); 
+
+SELECT books.title, users.email FROM books
+INNER JOIN users ON books.users_id = user_id;
+
+
+SELECT books.title, users.email FROM books
+LEFT JOIN users ON books.users_id = user_id;
+
+CREATE TABLE IF not exists users_books(
+    user_id smallint UNSIGNED not null,
+    book_id smallint UNSIGNED not null,
+    commentary smalltext not null,
+    primary key(user_id, book_id),
+constraint fk_com_users
+    foreign key(user_id)
+    references users(id),
+constraint fk_com_books
+    foreign key (book_id)
+    references books(id)
+)ENGINE=InnoDB;
+
+CREATE VIEW COMMENT_VW AS (
+SELECT books.title as titre, users.pseudo as lecteur, commentaries.commentary AS message from books
+INNER JOIN commentaries on books.id = commentaries.book_id
+INNER JOIN users on .user_id = user.id
+)
+
+
+COUNT()
+AVG()
