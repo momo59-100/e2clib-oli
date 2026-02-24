@@ -1,4 +1,3 @@
-// ----------- MORPION -----------
 const cells = document.querySelectorAll('.cell');
 const annonce = document.querySelector('.annonce');
 const restart = document.getElementById('restart');
