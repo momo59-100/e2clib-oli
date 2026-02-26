@@ -12,7 +12,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* couleurs */
     --col-dark-main: #0b1622;
     --col-dark-alt: #0d2a38;
     --col-light: #c2eef4;
@@ -334,22 +333,26 @@ h3 {
     margin-top: 30px;
 }
 
-.books-grid {
+#books-container {
     display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    padding: 20px;
-    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); 
+    gap: 20px; 
+    justify-items: center; 
+    width: 100%;
+    margin: 20px 0;
+    padding: 10px;
 }
 
 .book-card {
-    background-color: #fff;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    display: flex;
+    flex-direction: column; 
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 8px;
     padding: 15px;
     text-align: center;
-    width: 100%;
-    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 100%; 
 }
 
 .book-card:hover {
@@ -360,19 +363,19 @@ h3 {
 .book-cover {
     width: 100%;
     height: 250px;
-    object-fit: cover;
     border-radius: 8px;
     margin-bottom: 10px;
 }
 
-.book-card h3 {
-    font-size: 1.1rem;
-    margin: 5px 0;
-    color: #0b1622;
+.catalogue-container {
+    width: 100%;
+   
 }
 
-.book-card p {
-    font-size: 0.9rem;
-    color: #333;
-    margin: 2px 0;
+.filters-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  border: 2px solid var(--col-light);
 }

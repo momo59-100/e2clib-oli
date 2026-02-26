@@ -27,10 +27,9 @@
 
     <main>
         <div class="catalogue-container">
-            <!-- Barre de recherche et filtres -->
             <div class="filters-section">
                 <h2>Rechercher un livre</h2>
-                
+
                 <div class="search-bar">
                     <input type="text" id="search-input" placeholder="Titre ou auteur..." class="search-input">
                     <button id="search-btn" class="btn btn-dark">🔍 Rechercher</button>
@@ -81,14 +80,63 @@
                     <div class="filter-group">
                         <button id="reset-filters" class="btn btn-light">Réinitialiser</button>
                     </div>
+
                 </div>
             </div>
-
-            <!-- Conteneur des livres -->
+            
             <div id="books-container" class="books-grid">
                 <div class="loading">📚 Chargement des livres...</div>
             </div>
         </div>
+        </div>
     </main>
+    <footer>
+        <div class="foot-left">
+            <p>Site créé par la Prépa numerique de l'E2C - Grand Lille, Site d'Armentière</p>
+            <a class="btn btn-light" href="#">Nous Contacter</a>
+        </div>
+        <div class="foot-right">
+            <div class="site">
+                <h3>Site d'Armentières</h3>
+                <p>8 rue Philippe de Girard</p>
+                <p>59 280 Armentières</p>
+                <p>03 28 52 90 50</p>
+            </div>
+            <div class="site">
+                <h3>Site de Lille</h3>
+                <p>48 rue des canonniers</p>
+                <p>59 000 Lille</p>
+                <p>03 20 63 30 80</p>
+            </div>
+            <div class="site">
+                <h3>Site de Roubaix</h3>
+                <p>45 boulevard du général Leclerc</p>
+                <p>59 100 Roubaix</p>
+                <p>03 28 07 59 80</p>
+            </div>
+            <div class="site">
+                <h3>Site de Saint-Omer</h3>
+                <p>17 rue Allent</p>
+                <p>62 500 Saint-Omer</p>
+                <p>03 28 52 90 60</p>
+            </div>
+        </div>
+    </footer>
+    <div id="connect-background" style="display:none; opacity:0;">
+        <div id="connect-form">
+            <div class="close-button">X</div>
+            <form action="#" method="post">
+                <label for="email">Votre email :</label>
+                <input type="email" name="email" id="email" placeholder="name@tonsite.esp" required>
+
+                <label for="password">Mot de passe :</label>
+                <input type="password" name="password" id="password" placeholder="********" required>
+
+                <input type="submit" value="Let's Read!" class="btn btn-light">
+            </form>
+        </div>
+    </div>
 </body>
+
+
 </html>
