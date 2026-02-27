@@ -97,7 +97,6 @@ try {
         $books[] = $row;
     }
 
-    // 🟢 Retour JSON des livres
     echo json_encode([
         'success' => true,
         'data'    => $books,
