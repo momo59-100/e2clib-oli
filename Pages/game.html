@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../style/style.css">
     <script src="../Javascript/morpion.js" defer></script>
     <script src="../Javascript/connexion.js" defer></script>
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -80,22 +80,22 @@
         </div>
     </footer>
 
-    <div id="connect-background">
-        <div id="connect-form">
-            <div class="close-button">X</div>
+
+    <div id="connect-background" class="modal">
+        <div id="connect-form" class="modal-content">
+            <button type="button" class="close-button">&times;</button>
 
             <form action="#" method="post">
                 <label for="email">Votre email :</label>
-                <input type="email" name="email" id="email" placeholder="name@tonsite.esp" required>
+                <input type="email" name="email" id="email" placeholder="name@tonsite.com" required>
 
                 <label for="password">Mot de passe :</label>
                 <input type="password" name="password" id="password" placeholder="********" required>
 
-                <input type="submit" value="Let's Read!" class="btn btn-light">
+                <button type="submit" class="btn btn-light">Let's Read!</button>
             </form>
         </div>
     </div>
-
 </body>
 
 </html>

@@ -27,63 +27,61 @@
 
     <main>
         <div class="catalogue-container">
-            <div class="filters-section">
-                <h2>Rechercher un livre</h2>
+          <div class="filters-section">
+    <h2>Rechercher un livre</h2>
 
-                <div class="search-bar">
-                    <input type="text" id="search-input" placeholder="Titre ou auteur..." class="search-input">
-                    <button id="search-btn" class="btn btn-dark">🔍 Rechercher</button>
-                </div>
+    <div class="search-bar">
+        <input type="text" id="search-input" placeholder="Titre ou auteur..." class="search-input">
+        <button id="search-btn" class="btn btn-dark">🔍 Rechercher</button>
+    </div>
 
-                <div class="filters-grid">
-                    <div class="filter-group">
-                        <label for="filter-genre">Genre</label>
-                        <select id="filter-genre" class="filter-select">
-                            <option value="">Tous les genres</option>
-                            <option>Non classé</option>
-                            <option>Policier</option>
-                            <option>Drame</option>
-                            <option>Action</option>
-                            <option>Thriller</option>
-                            <option>Politique</option>
-                            <option>Science-fiction</option>
-                            <option>Educatif</option>
-                            <option>Fantasy</option>
-                            <option>Bande-déssinée</option>
-                        </select>
-                    </div>
+    <div class="filters-grid">
+        <div class="filter-group">
+            <label for="filter-genre">Genre</label>
+            <select id="filter-genre">
+                <option value="">Tous les genres</option>
+                <option>Non classé</option>
+                <option>Policier</option>
+                <option>Drame</option>
+                <option>Action</option>
+                <option>Thriller</option>
+                <option>Politique</option>
+                <option>Science-fiction</option>
+                <option>Educatif</option>
+                <option>Fantasy</option>
+                <option>Bande-dessinée</option>
+            </select>
+        </div>
 
-                    <div class="filter-group">
-                        <label for="filter-format">Format</label>
-                        <select id="filter-format" class="filter-select">
-                            <option value="">Tous les formats</option>
-                            <option>Poche</option>
-                            <option>Roman</option>
-                            <option>Bande-déssinée</option>
-                            <option>Manga</option>
-                            <option>Magazine</option>
-                            <option>Grand Format</option>
-                        </select>
-                    </div>
+        <div class="filter-group">
+            <label for="filter-format">Format</label>
+            <select id="filter-format">
+                <option value="">Tous les formats</option>
+                <option>Poche</option>
+                <option>Roman</option>
+                <option>Bande-dessinée</option>
+                <option>Manga</option>
+                <option>Magazine</option>
+                <option>Grand Format</option>
+            </select>
+        </div>
 
-                    <div class="filter-group">
-                        <label for="filter-language">Langue</label>
-                        <select id="filter-language" class="filter-select">
-                            <option value="">Toutes les langues</option>
-                            <option>Français</option>
-                            <option>Anglais</option>
-                            <option>Portugais</option>
-                            <option>Arabe</option>
-                        </select>
-                    </div>
+        <div class="filter-group">
+            <label for="filter-language">Langue</label>
+            <select id="filter-language">
+                <option value="">Toutes les langues</option>
+                <option>Français</option>
+                <option>Anglais</option>
+                <option>Portugais</option>
+                <option>Arabe</option>
+            </select>
+        </div>
 
-                    <div class="filter-group">
-                        <button id="reset-filters" class="btn btn-light">Réinitialiser</button>
-                    </div>
-
-                </div>
-            </div>
-            
+        <div class="filter-group">
+            <button id="reset-filters">Réinitialiser</button>
+        </div>
+    </div>
+</div>
             <div id="books-container" class="books-grid">
                 <div class="loading">📚 Chargement des livres...</div>
             </div>
@@ -122,17 +120,19 @@
             </div>
         </div>
     </footer>
-    <div id="connect-background" style="display:none; opacity:0;">
-        <div id="connect-form">
-            <div class="close-button">X</div>
+
+    <div id="connect-background" class="modal">
+        <div id="connect-form" class="modal-content">
+            <button type="button" class="close-button">&times;</button>
+
             <form action="#" method="post">
                 <label for="email">Votre email :</label>
-                <input type="email" name="email" id="email" placeholder="name@tonsite.esp" required>
+                <input type="email" name="email" id="email" placeholder="name@tonsite.com" required>
 
                 <label for="password">Mot de passe :</label>
                 <input type="password" name="password" id="password" placeholder="********" required>
 
-                <input type="submit" value="Let's Read!" class="btn btn-light">
+                <button type="submit" class="btn btn-light">Let's Read!</button>
             </form>
         </div>
     </div>
