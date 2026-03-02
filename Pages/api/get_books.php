@@ -19,9 +19,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
 
 // Connexion à MySQL
 $dbhost = 'localhost';
-$dbuser = 'root';
-$dbpass = '';
-$dbname = 'e2clib_admin';
+$dbuser = 'phpmyadmin';
+$dbpass = 'PNE2Cgrandlille';
+$dbname = 'e2clib_oli';
 
 $conn = new mysqli($dbhost, $dbuser, $dbpass, $dbname);
 if ($conn->connect_error) {

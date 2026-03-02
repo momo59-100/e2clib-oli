@@ -335,13 +335,13 @@ h3 {
 
 #books-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); 
-    gap: 20px; 
-    justify-items: center; 
-    width: 100%;
-    margin: 20px 0;
-    padding: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 240px));
+    gap: 20px;
+    margin: 20px auto;
+    justify-content: center;
 }
+
+
 
 .book-card {
     display: flex;
