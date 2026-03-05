@@ -13,9 +13,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E2C Lib</title>
     <link rel="icon" href="../assets/icons/logoE2Clib.png">
-    <link rel="stylesheet" href="./style/style.css">
-    <script type="module" src="./script/app.js" defer></script>
-
+    <link rel="stylesheet" href="../style/style.css">
+    <script src="../Javascript/connexion.js" defer></script>
+    <script src="../Javascript/catalogueManager.js" defer></script>
 
 </head>
 <body>
@@ -29,7 +29,7 @@
     <a class="btn btn-dark" href="./pages/game.html">Détente</a>
 
     <?php if(!isset($_SESSION["userid"])){?>
-        <a id="connect-button" class="btn btn-light" href="#">Connexion</a>
+        <a id="connect-button" class="btn btn-light" href="">Connexion</a>
     <?php }else{?>
         <p>Bonjour</p>
     <?php } ?>
