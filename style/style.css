@@ -135,7 +135,7 @@ main {
 .art-image,
 .art-illus,
 iframe.art-illus {
-    width: 35%;
+    width: 30%;
     border-radius: 15px;
     object-fit: cover;
 }
